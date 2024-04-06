@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
       password: hashedPW,
       username,
     });
-
+  
     // Send verification mail
     await sendEmail({
       emailReceiver: email,
